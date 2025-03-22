@@ -100,22 +100,99 @@
      </form> 
      <button>hello</button> --> 
 
+     <!-- different  --> 
+
      <form action="/server"> 
         <div>
             <label for="username ">Username :</label>
             <input type="text"
             placeholder="enter username" 
             id="username"
-            name="user"/>
+            name="devil"/>
         </div> 
         <div>
             <label for="password">password : </label>
             <input type="password" placeholder="enter password" id="password" name="pass"/>
         </div> 
         <button>submit</button>
+     </form> 
 
+     <!-- search  -->
+     <!-- <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+     </form> --> 
 
+     <!-- practice ques  -->
+     <!-- Create a search  option that redirects its search request to google   --> 
+
+     <!---google-->
+     <br>
+     <form action="https://www.bing.com/search">
+     <input type="text" placeholder="search on google" name="q">  
+     <button>search</button>
+     </form> 
+     <br>
+
+    <!-- flipcart  -->
+     <form action="https://www.flipkart.com/search"> 
+        <input type="text" placeholder="search in flipcart" name="q">
+        <button>search</button>
+     </form>  
+     <br>
+
+     <!--- Hotstar -->
+     <form action="https://www.hotstar.com/in">
+        <input type="text" placeholder="search on hotstar">
+        <button>search</button>
      </form>
 
-</body>
+     <!-- Checkbox  -->
+      <form action="/server"> 
+        <div> 
+         <h1>choose your subjects </h1>
+        <input type="checkbox" id="Math" name="sub" value="math"/>  
+        <Label for="Math">Math</Label> 
+        <input type="checkbox" id="English" name="sub" value="eng" />
+        <Label for="English">English </Label> 
+        <input type="checkbox" id="Hindi" name="sub" value="hindi" />
+        <Label for="Hindi"> Hindi</Label>  
+        <button>submit</button>  
+        </div>
+       </form>  
+       
+
+       <!---- Radio ---> 
+       <form action="/server"> 
+        <div> 
+        <p><b>which fruit is king of fruits </b> </p>
+        <input type="radio" name="fruit" id="apple" value="apple"> 
+        <label for="apple">Apple</label>  
+        <input type="radio" name="fruit" id="mango" value="mango"> 
+        <label for="mango">Mango</label>
+        <input type="radio" name="fruit" id="banana" value="banana"> 
+        <label for="banana">Banana</label> 
+        <button> submit</button>
+        </div>
+       </form> 
+
+       <!---- select -->
+       <form action="/server">
+        <div>
+            choose your profession
+            <select name="profession" id="profession"> 
+                <option>Select</option>
+                <option value="stu">Student</option>
+                <option value="dev">Developer</option>
+                <option value="tea">Teacher</option>
+            </select>  
+        </div>   
+        <button>submit</button> 
+        <br>
+        <label for="vol">how much you want to give rating :</label> 
+        <input type="range" id="vol" min="0" max="100" name="vol" step="10"/>
+        <button>submit</button>
+       </form>
+
+    </body>
 </html>
