@@ -1,0 +1,29 @@
+* {
+    font-family: Courier New; 
+    
+}
+h1 {
+    color: #b92b27;
+}
+
+#login{
+    color: aqua; 
+    background-color: #ffff00;
+} 
+
+#signup {
+    background-color: #b92b27;
+}
+
+.upvote {
+    background-color: red;
+}
+/* input::placeholder {
+    color: yellow;
+    background-color: yellow;
+} */ 
+
+
+
+
+

@@ -1,0 +1,27 @@
+* {
+    font-family: Courier New;
+}
+
+h1 {
+    color: #1b74e4;
+} 
+
+#Register,
+#login {
+    background-color: aqua; 
+    color: #ff0000;
+    
+} 
+
+button {
+    background-color: black; 
+    color: white;
+}
+
+
+
+
+
+
+
+
