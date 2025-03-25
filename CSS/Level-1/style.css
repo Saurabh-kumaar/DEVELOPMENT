@@ -1,14 +1,58 @@
-h1 {
+/* h1 {
   color: yellow;
-  background-color: red; 
-  
-} 
-p{
+  background-color: red;  
+  text-align: center; 
+  border: solid; 
+  width: 70%; 
+  font-weight: 900;  
+  text-decoration: wavy green;
+  line-height: 1;
+  letter-spacing: 5px; 
+}     */
+
+h2 {
+    color: white;
+    background-color: black; 
+    letter-spacing: 5px; 
+    text-decoration: underline red;
+}
+
+p { 
     color: rgb(0,0,0);
-    background-color: chocolate;
+    background-color: chocolate; 
+    text-align: start;
+    line-height: 1;
+    font-size: 15px;
+
+
 } 
 button {
     color: blue; 
-    background-color: yellow;
-} rt
-djfff djlfrit 
+    background-color: #ff00ff; 
+}   
+a{
+    text-decoration: none;
+}
+ 
+h1 {
+    font-family: league spartan;
+     color: #ffa511;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5; 
+    text-decoration: underline #1db2e8; 
+    text-transform: uppercase;
+    
+}
+
+
+
+
+
+
+
+
+
+
