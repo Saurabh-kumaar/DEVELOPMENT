@@ -61,6 +61,21 @@ p:active {
 
 input[type="radio"]:checked + label{ 
     color: red;
-    font-weight: 700;
+    font-weight: bold;
+
+} 
+
+div:nth-of-type(n) {
+    background-color: blueviolet;
+    
+    
 
 }
+
+
+
+
+
+
+
+
