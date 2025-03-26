@@ -10,7 +10,7 @@ h1 {
 #login {
     background-color: aqua; 
     color: #ff0000;
-    
+
 } 
 
 button {
@@ -18,7 +18,17 @@ button {
     color: white;
 }
 
+#myId p {
+    color: red; 
+    background-color: yellow; 
+    text-decoration: underline;
+    
+}
 
+button:hover {
+    color: black;
+    background-color: yellow;
+}
 
 
 

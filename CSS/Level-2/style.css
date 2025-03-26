@@ -23,7 +23,44 @@ h1 {
     background-color: yellow;
 } */ 
 
+p + h3 {
+    text-decoration: underline;
+}
+.upvote + button {
+    background-color: #adc2e0;
+}
 
+div > input {
+    background-color: darksalmon;
+} 
 
+input[type ="text"] {
+     color: black;
+}
+input[type = "password "] {
+    color: #ffff00;
 
+}
 
+button:hover {
+    color: #ffff00; 
+    background-color: black;
+}
+h3:hover{
+    color: pink;
+    text-decoration: none;
+}
+button:active {
+    background-color: pink;
+}
+
+p:active {
+    font-weight: bold;
+    color: green;
+} 
+
+input[type="radio"]:checked + label{ 
+    color: red;
+    font-weight: 700;
+
+}
