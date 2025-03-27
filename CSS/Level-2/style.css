@@ -16,7 +16,7 @@ h1 {
 }
 
 .upvote {
-    background-color: red;
+    background-color: red; 
 }
 /* input::placeholder {
     color: yellow;
@@ -43,13 +43,11 @@ input[type = "password "] {
 }
 
 button:hover {
-    color: #ffff00; 
+    color: yellow;
     background-color: black;
 }
-h3:hover{
-    color: pink;
-    text-decoration: none;
-}
+ 
+
 button:active {
     background-color: pink;
 }
@@ -67,9 +65,19 @@ input[type="radio"]:checked + label{
 
 div:nth-of-type(n) {
     background-color: blueviolet;
-    
-    
+}
 
+h1::first-letter {
+    color: black;
+} 
+
+h4::first-line {
+    color: yellow; 
+    background-color: red;
+}
+
+h4::selection {
+    background-color: black;
 }
 
 
