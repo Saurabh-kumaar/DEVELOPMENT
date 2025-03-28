@@ -80,7 +80,10 @@ div {
     background-color: #7aa874;
     margin: 10px auto; 
     box-shadow: 2px 2px 10px black;  
-    
+    background-image: url("japan.jpg"); 
+    background-size:contain;  
+
+
 }  
 
 
