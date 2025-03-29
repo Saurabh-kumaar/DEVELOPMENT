@@ -73,7 +73,7 @@ div:nth-of-type(2n) {
 
 /* shadow  ------------------------------*/ 
 
-div {
+/* div {
     width: 200px;
     height: 50px;
     text-align: center;
@@ -83,28 +83,136 @@ div {
     background-image: url("japan.jpg"); 
     background-size:contain;  
 
+}   */
+
+
+/* position property */
+/* 
+div {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+} 
+
+#static { 
+    background-color: yellow; 
+    position: static;
+    top: 100px;
+    left: 100px;
+
+} 
+
+#Relative { 
+    background-color: yellow; 
+    position: Relative;
+    top: 100px;
+    left: 100px;
+
+}
+
+#absolute { 
+    background-color: yellow; 
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+} 
+
+#fixed { 
+    background-color: yellow; 
+    position: fixed;
+    top: 100px;
+    left: 100px;
+
+} */
+
+
+/* smile */
+/* .face {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(253, 164, 30); 
+    border-radius: 50%;
 
 }  
 
+.mouth {
+    width: 200px; 
+    height: 75px;
+    background-color: brown;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 250px;
+    left: 100px; 
+
+}
+
+.left-eye, 
+.right-eye {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block; 
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    
+
+} 
+
+.right-eye {
+    left: 250px; 
+}
+ */ 
+
+ /* Assignment solutions  */
+#box1{ 
+    width: 100px;
+    height: 100px;
+    background: green; 
+    transition: width 2s ease-in 0.5s; 
+  }
+
+#box1:hover { 
+    width: 600px;
+}  
 
 
+#box2 {
+    width: 100px;
+    height: 100px;
+    background: red; 
+    transform: translate(200px 200px) rotate(90deg);
+} 
+
+#box3 {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue; 
+    transform: skewX(20deg);
+} 
+
+#box4 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen; 
+    box-shadow: 2px 2px 5px green;
+} 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#myPic {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    background-image: url("virat.jpg"); 
+    background-size: contain;
+    opacity: 50%;
+}
 
 
 
