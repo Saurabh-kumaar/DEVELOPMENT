@@ -1,0 +1,87 @@
+/* .container {
+    height: 300px;
+    width: 600px;
+    background-color: yellow ; 
+    border: 2px solid black;
+    display: grid; */
+    /* grid-template-rows: 60px 60px 60px;
+    grid-template-columns: 100px 100px 100px ; */ 
+    /* grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(4,1fr); 
+    column-gap: 10px; */
+    /* row-gap: 10px;  */
+     /* grid-gap: 10px;  
+    justify-items:center;
+    align-items: end;
+
+}   */
+
+
+/* .grid {
+    height: 50px;
+    width: 100px;
+    background-color: yellowgreen;
+    border: 2px solid black; 
+    text-align: center;
+ 
+}  */
+
+/* ==================================================================================================
+================================================================================================== */
+
+ 
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: rgb(247, 97, 187); 
+
+    /* animation-name: widthAnimate;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal;  */
+
+    border-radius: 20px;
+    animation: widthAnimate 3s ease-in 0s infinite normal;
+
+}
+
+@keyframes fontAnimation {
+    from  {
+        font-size: 20px;
+    }
+    to {
+        font-size:50px;
+    }
+}
+
+@keyframes colorAnimate {
+    from  {
+        background-color: green;}
+    to{background-color: blue;
+    }
+} 
+
+@keyframes widthAnimate {
+    from  {
+        width: 10px;
+        background-color: blue;
+        font-size: 20px;
+    }
+    to {
+        width: 400px; 
+        background-color: yellow;
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
