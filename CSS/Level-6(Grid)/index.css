@@ -30,11 +30,10 @@
 ================================================================================================== */
 
  
-.box {
+/* .box {
     height: 100px;
     width: 300px;
-    background-color: rgb(247, 97, 187); dadf 
-daf 
+    background-color: rgb(247, 97, 187);  */
     /* animation-name: widthAnimate;
     animation-duration: 4s;
     animation-timing-function: ease-in;
@@ -42,7 +41,7 @@ daf
     animation-iteration-count: infinite;
     animation-direction: normal;  */
 
-    border-radius: 20px;
+    /* border-radius: 20px;
     animation: widthAnimate 3s ease-in 0s infinite normal;
 
 }
@@ -64,17 +63,89 @@ daf
 } 
 
 @keyframes widthAnimate {
-    from  {
+    10%  {
         width: 10px;
         background-color: blue;
         font-size: 20px;
     }
-    to {
+    50% {
         width: 400px; 
         background-color: yellow;
         font-size: 50px;
     }
+} */
+
+
+/* ==================================================================================================
+================================================================================================== */
+ 
+/* media  */ 
+
+h1 {
+    background-color: yellow;
+    border: 2px solid black;
 }
+ 
+@media (width: 400px) {
+    h1 {
+        background-color: red;
+        color: white;
+    } 
+    div {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+    } 
+}
+
+@media (min-width: 700px) {
+    h1 {
+        background-color: greenyellow ;
+    }
+}
+ 
+@media (max-width: 200px) {
+    h1 {
+        background-color: pink;
+    }
+}
+
+
+@media (min-width:200px) and (max-width:300px) {
+    h1 {
+        background-color: magenta;
+    }
+}
+
+@media (orientation:landscape) {
+    h1 {
+        background-color: aqua;
+        color: brown;
+    }
+}
+
+ /* ================================================================================================== */
+ /* ================================================================================================== */ */ */
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
