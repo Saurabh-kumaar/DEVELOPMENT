@@ -42,17 +42,17 @@
 
 .sidebar .logo a {
     position: absolute;
-    left: 60px;
+    left: 50px;
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
 
 }
  
 .sidebar .two_btn i {
     color: grey; 
-    font-size: 25px;
+    font-size: 20px;
     line-height: 60px;
     position: absolute;
     left: 275px; 
@@ -68,8 +68,8 @@
 }
 
 .sidebar .menu li {
-    margin-top: 30px; 
-    padding: 20px 20px; 
+    margin-top: 30 px; 
+    padding: 14px 20px; 
 
  } 
 
