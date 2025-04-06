@@ -75,14 +75,16 @@
 
 .sidebar .menu i,
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 20px;
+    
 
 }
 
 .sidebar .menu i {
-    padding-right: 8px;
+    padding-right: 20px; 
+    
 }
 
 .sidebar .social-media {
