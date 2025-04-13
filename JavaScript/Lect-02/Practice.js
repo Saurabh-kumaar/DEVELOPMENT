@@ -40,7 +40,7 @@
 // } else {
 //   console.log("bad string")
 // }
-
+adf 
  
 // output predict :- 
 
