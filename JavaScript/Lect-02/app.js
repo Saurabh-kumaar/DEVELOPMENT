@@ -62,6 +62,8 @@
 // } else if(marks <= 30) {
 //   console.log("fail"); 
 // }
+
+
  
 // -------------
 // nested loop 

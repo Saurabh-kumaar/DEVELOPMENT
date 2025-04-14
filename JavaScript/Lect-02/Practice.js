@@ -99,6 +99,7 @@
 //     console.log("invalid ")
 //   }
 
+// Qs 4 :- 
 
 // let str = aldkfj; 
 
@@ -108,6 +109,33 @@
 //   console.log("not golden"); 
 // } 
 
+// Qs 6:- 
+
+// let a = 32; 
+// let b = 47852 ; 
+
+// if(a % 10 == b % 10){
+//   console.log("same digit" )
+// } else {
+//   console.log("not same");
+// }
+
+//  Qs 5:- 
+
+let a = 10;  
+let b = 15; 
+let c = 12;  
+
+if(a > b && a > c ){
+  console.log(a , "is largest no "); 
+} else if (b > a && b > c) {
+  console.log(b, "is the largest"); 
+} else {
+  console.log(c, "is the largest no");
+}
+
+
+ 
 
 
  
