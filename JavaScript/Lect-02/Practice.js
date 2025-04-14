@@ -40,18 +40,73 @@
 // } else {
 //   console.log("bad string")
 // }
-adf 
+
  
-// output predict :- 
+// output predict :- what is the output of this code.! 
 
-let num = 12; 
+// let num = 12; 
 
-if((num%3 === 0) && ( (num+1 == 15) || (num-1 == 11))) {
-  console.log("safe");   // (true && ((false || true = true)) = true && true = true then safe is right ans.
-} else {
-  console.log("unsafe");
-} 
+// if((num%3 === 0) && ( (num+1 == 15) || (num-1 == 11))) {
+//   console.log("safe");   // (true && ((false || true = true)) = true && true = true then safe is right ans.
+// } else {
+//   console.log("unsafe");
+// } 
 
+// Practice Questions Assignment :- 
+
+// Qs 1 Create a number variable num with some value .  
+ 
+// let num = 40;
+
+// if(num % 10 == 0){
+//   console.log("good"); 
+// } else {
+//   console.log("bad"); 
+// }
+ 
+
+// Qs .2   
+
+// let name = prompt("enter your name");  
+// let age = prompt("enter your age") 
+
+// alert('mohit is 12 years old' ); 
+
+ 
+
+// Qs . 3 :- 
+
+// let quater = 1; 
+
+// switch(quater) {  
+//   case 1: 
+//         console.log("january", "february", "march"); 
+//         break; 
+
+//   case 2:    
+//         console.log ("april", "may", "june"); 
+//         break; 
+
+//   case 3: 
+//         console.log ("july", "aug","sep"); 
+//         break;
+ 
+//   case 4: 
+//         console.log  ("oct", "nov", "dec"); 
+//         break;
+
+//   default:
+//     console.log("invalid ")
+//   }
+
+
+// let str = aldkfj; 
+
+// if(str[0] == "a"  || str[0] ==  "A" && str.length>5){
+//   console.log("golden");
+// } else {
+//   console.log("not golden"); 
+// } 
 
 
 

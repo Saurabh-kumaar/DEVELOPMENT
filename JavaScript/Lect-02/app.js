@@ -100,13 +100,72 @@
   
 // logical --------- 
 
-let marks = 40; 
+// let marks = 40; 
 
-if(!(marks < 33)) {    
-  console.log("pass");
-  console.log("A++");
-}
+// if(!(marks < 33)) {    
+//   console.log("pass");
+//   console.log("A++");
+// }
+  
  
+// switch statement ----------------------------
+
+// let day = 4; 
+
+// switch(day) {
+//   case 1: console.log("sunday"); 
+//   break; 
+//   case 2: console.log("monday"); 
+//   break; 
+//   case 3: console.log("tuesday"); 
+//   break; 
+//   case 4: console.log("wednesday"); 
+//   break; 
+//   case 5: console.log("thursday"); 
+//   break; 
+//   case 6: console.log("friday"); 
+//   break; 
+//   case 7: console.log("saturday"); 
+//   break;  
+ 
+// } 
+
+// ----- 
+
+// let day = "friday"; 
+
+// switch(day) {
+//   case "sunday": console.log("kachori bhujiya"); 
+//   break;  
+//   case "monday": console.log("paneer tanduri"); 
+//   break;
+//   case "tuesday": console.log("bati chokha "); 
+//   break;
+//   case "wednesday": console.log("mashroom masala"); 
+//   break;
+//   case "thursday": console.log("paneer tikka"); 
+//   break;
+//   case "friday": console.log("dal chaval sbji"); 
+//   break;
+//   case "saturdayday": console.log("kachori bhujiya"); 
+//   break;
+  
+// }
+
+// alert - prompt -------------------------------> 
+
+// alert("something is wrong");  
+// console.log("this is a simple log"); 
+// console.error("hello guys ");
+
+// prompt("enter your name ") 
+// let firstName = prompt("enter your name :"); 
+// console.log(firstName);  
+
+// let firstName = prompt("enter first name"); 
+// let lastName = prompt("enter last name"); 
+// console.log("welcome", firstName, lastName,"!"); 
+
 
 
 
