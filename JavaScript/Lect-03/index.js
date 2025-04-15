@@ -13,16 +13,60 @@
 // let str = "iLoveCoding";  
 // console.log(str.slice(4));
 // console.log(str.slice(2)); 
-// console.log(str.slice(0,4)); 
-  
-// // replace 
+// console.log(str.slice(0,4));  
+   
+// replace 
 // let msg = "yesbortellme";
 // msg.replace("love","do");
 
-// // repeat 
+// repeat 
 // let sir = "haanbollo"; 
 
+//  --------- Array ------------ 
 
+// let students = ("abhishek","mohit", "rinchu"); 
+// console.log(students.toUpperCase());  
+
+// let cars = ["lambo","ferari","bugati"]; 
+// console.log(cars);  
+
+// add cars in list  in end :- 
+
+// push - end 
+// cars.push("verna"); 
+// cars.push("verna"); 
+// cars.push("verna"); 
+// cars.push("verna");  
+
+// unshift - start  
+// cars.unshift("gt");  
+// cars.unshift("gt"); 
+// cars.unshift("gt"); 
+
+// delete which perticulary cars add .   
+
+// pop - ---remove 
+// cars.pop(); 
+// cars.pop(); 
+// cars.pop(); 
+// cars.pop();   
+
+// shift----- remove 
+// cars.shift(); 
+// cars.shift(); 
+// cars.shift(); 
+
+ 
+// -------------- 
+
+// find index value of components 
+
+let colours = ["red", "yellow", "blue"]; 
+console.log(colours); 
+
+
+
+ 
 
 
 
