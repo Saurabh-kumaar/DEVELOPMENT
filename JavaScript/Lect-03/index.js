@@ -56,7 +56,7 @@
 // cars.shift(); 
 // cars.shift(); 
 
- 
+ af 
 // -------------- 
 
 // find index value of components 
