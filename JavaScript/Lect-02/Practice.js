@@ -122,23 +122,132 @@
 
 //  Qs 5:- 
 
-let a = 10;  
-let b = 15; 
-let c = 12;  
+// let a = 29;  
+// let b = 15; 
+// let c = 12;   
 
-if(a > b && a > c ){
-  console.log(a , "is largest no "); 
-} else if (b > a && b > c) {
-  console.log(b, "is the largest"); 
-} else {
-  console.log(c, "is the largest no");
-}
+// if(a > b && a > c ){
+//   console.log(a , "is largest no "); 
+// } else if (b > a && b > c) {
+//   console.log(b, "is the largest"); 
+// } else {
+//   console.log(c, "is the largest no");
+// }
 
+// ===================================================
+  
+// convert this into swtich . below side code 
 
+// let grade = "B";
+
+// if (grade === "A") {
+//   console.log("Excellent");
+// } else if (grade === "B") {
+//   console.log("Good");
+// } else if (grade === "C") {
+//   console.log("Average");
+// } else {
+//   console.log("Fail");
+// }
+
+// ... 
+
+// let grade = "B"; 
+
+// switch(grade) {
+//   case "A":
+//   console.log("Excellent"); 
+//   break; 
+
+//   case "B":
+//   console.log("good"); 
+//   break; 
+
+//   case "C":
+//   console.log("average"); 
+//   break; 
+
+//   default:
+//     console.log("fail");
+// }
  
 
+// ------ 
 
+
+// Qs .. check no is positive , negative , or zero . 
  
+// let num = -7; 
+
+// if(num > 0) {
+//   console.log("it is positive number"); 
+// } else if (num < 0) {
+//   console.log("it is negative number"); 
+// } else {
+//   console.log("it is zero"); 
+// }
+ 
+// --------- 
+
+
+// check price of fruits ---------
+
+// let fruits = "orange"; 
+
+// switch(fruits) {
+
+//   case "banana":
+//     console.log("70 kg "); 
+//     break; 
+
+//   case "orange":
+//     console.log("40 kg "); 
+//     break; 
+
+//   case "apple": 
+//     console.log("50 kg"); 
+//     break;
+
+//   default:
+//     console.log("unknown fruit");
+  
+// }
+
+// ------------- 
+
+// write a program using switch and check the value of variable score between(0 and 100) . 
+
+// let score = "A"; 
+
+// switch(score) {
+
+//   case "A" :
+//     console.log("90 - 100"); 
+//     break;  
+
+//   case "B":
+//     console.log("80 - 89"); 
+//     break; 
+
+//   case "C":
+//     console.log("70 - 79"); 
+//     break; 
+
+//   case "D":
+//     console.log("60 - 69"); 
+//     break; 
+    
+//   case "F":
+//     console.log("0-59"); 
+//     break; 
+  
+//   default :
+//     console.log("its not in match");
+    
+// } 
+// ... 
+ 
+// let score = prompt("input the score ")
 
 
 
