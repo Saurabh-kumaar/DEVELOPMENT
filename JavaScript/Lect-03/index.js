@@ -1,6 +1,6 @@
 // let name = "Apna College"; 
 
-// let msg = "ILoveCoding         ";
+// let msg = "           ILoveCoding        ";
 // let newMsg = msg.trim(); 
 // console.log(newMsg);  
 // newMsg = newMsg.toUpperCase(); 
@@ -76,10 +76,7 @@
 
 
 
-
-
-
-
+ 
 
 
 

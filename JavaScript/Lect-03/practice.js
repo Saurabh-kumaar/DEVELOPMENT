@@ -31,6 +31,54 @@
 
 
 
+// Assignment Solutions :---------------- 
+
+// Qs 1:- 
+
+// let digit = [7, 9, 0, -2]; 
+// let n = 3; 
+// let nums = digit.slice(0,n); 
+// console.log(nums); 
+ 
+// Qs 2 :- 
+
+// let val = [7,9,0,-2]; 
+// let n = 3; 
+// let digit = val.slice(val.length-n); 
+// console.log(digit); 
+ 
+// Qs 3 :- 
+
+ 
+
+
+
+
+
+// Qs 4 :-- 
+
+ 
+
+
+
+
+// Qs 5:-  
+
+// let str = "     hello ! everyo        "; 
+// let val = str.trim(); 
+// console.log(val); 
+
+
+// Qs 6:- 
+
+let val = [1, 3, 5, 6, 7,9, 10, 20]; 
+let check = 5; 
+
+if(val.includes(check)){
+  console.log("it is exist in this array"); 
+} else {
+  console.log("404 NOT EXIST "); 
+}
 
 
 
