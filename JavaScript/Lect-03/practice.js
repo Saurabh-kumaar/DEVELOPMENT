@@ -20,7 +20,14 @@
 // let months = ["january", "july","march","august"]; 
 // console.log(months); 
 
-//  final :-  july june march august
+//  final :-  july june march august 
+
+
+// make tic-toe game ------------ 
+
+// let arr = [ ['x',null,'o'],[null,'x',null],['o',null,'x']]; 
+// console.log(arr); 
+
 
 
 

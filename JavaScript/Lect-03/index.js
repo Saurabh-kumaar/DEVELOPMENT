@@ -56,13 +56,18 @@
 // cars.shift(); 
 // cars.shift(); 
 
- af eiur 
+ 
 // -------------- 
 
 // find index value of components 
 
-let colours = ["red", "yellow", "blue"]; 
-console.log(colours); 
+// let colours = ["red", "yellow", "blue"]; 
+// console.log(colours); 
+
+
+// nested array 
+
+// let hello = [ [4,5], [0,9], [3,4]]; 
 
 
 
