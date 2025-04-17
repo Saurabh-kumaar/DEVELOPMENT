@@ -72,14 +72,14 @@
 // Qs 6:- 
 
 let val = [1, 3, 5, 6, 7,9, 10, 20]; 
-let check = 5; 
+let check = 50;
+
 
 if(val.includes(check)){
   console.log("it is exist in this array"); 
 } else {
   console.log("404 NOT EXIST "); 
 }
-
 
 
 
