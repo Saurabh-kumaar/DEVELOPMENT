@@ -19,9 +19,29 @@
 
 // backwords 
 
-for(let i=10; i>=2; i=i-2){
+// for(let i=10; i>=2; i=i-2){
+//   console.log(i); 
+// } 
+ 
+// find any num of table ------
+
+let n = prompt("write your number");  
+n = parseInt(n); 
+
+for(let i=n; i<=n*10; i=i+n){
   console.log(i); 
-} 
+}
+
+// ---- 
+ 
+// 5 table 
+// for(let i=0; i<=50; i=i+5){
+//   console.log(i); 
+// }
+ 
+// ------ 
+
+
 
 
 
