@@ -95,16 +95,33 @@
  
 // ------------- 
  
+//------- Guessing Game -------- 
+
+// const max = prompt("enter the max number"); 
+
+// const random = Math.floor(Math.random() * max) + 1; 
+// let guess = prompt("guess the number"); 
+
+// while(true) {
+//   if(guess == "quit"){
+//     console.log("user quit"); 
+//     break; 
+//   }
+  
+//   if(guess == random){
+//     console.log("you are right! congrats!! random number was" , random); 
+//     break; 
+//   } else if(guess < random) {
+//     guess = prompt("hint : your guess was too small. please try again"); 
+//   } else { 
+//     guess = prompt("hint: your guess was too large");
+//   }
+// }
 
 
+// ========================================================================== 
 
-
-
-
-
-
-
-
+ 
 // Practice questions ----------------- 
 
 // Generate a random number between 1 and 100; 
@@ -116,9 +133,51 @@
 // values get 
  
 // ------------ 
+//  =======================================================================
+        
+        // Assignment Questions ------------ 
+
+      // Qs 1:-  Create a program that generates a random number respresting a dice roll. 
+      //       [The number should be between 1 ans 6]. 
+
+
+// Math.random(); 
+// Math.random() * 6; 
+// Math.floor( Math.random * 6); 
+// Math.floor(Math.random * 6 ) + 1;  
+
+// 2nd way :- 
+
+// let dice = Math.floor(Math.random() * 6) + 1; 
+// console.log(dice); 
  
 
+// Qs 2:-  create an object represting a car that stores the  following properties for the 
+// car. name, model, color . print the car's name 
 
+
+// const car = { 
+//   name: "buggati", 
+//   model: "zx1000n", 
+//   color: "Black"
+  
+// }; 
+// console.log(car.name); 
+
+// Qs 3:- create an object person with their name, age, and city.
+// Edit their city's original values to change it to "new-York" . 
+ 
+
+// const person ={ 
+
+//   name: "RINCHU", 
+//   age: 23, 
+//   city: "New York"
+
+// }; 
+// person.city = "new york"; 
+// person.country = "united states"; 
+// console.log(person); 
 
 
 
