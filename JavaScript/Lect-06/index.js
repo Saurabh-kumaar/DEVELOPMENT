@@ -47,8 +47,4 @@ function sum(a, b){
 }
 
 sum(1,2); 
-sum(4.5,9);adflk
-
-adljf
-
-a;dkjf
+sum(4.5,9);ajdf 
