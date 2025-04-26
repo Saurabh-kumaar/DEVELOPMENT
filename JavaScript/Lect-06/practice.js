@@ -20,12 +20,24 @@
 // findrandom(); 
 // findrandom(); 
 // findrandom(); 
+// --------------------------- 
 
+// create a function that gives us the average of 3 numbers. 
 
+// function average() { 
+//    let avg = (3 + 4 + 3 ) / 3; 
+//   console.log(avg); 
+// }
+// average(); 
 
+// 2nd way :- 
 
+function calcAvg(a,b,c) {
+  let avg = (a+b+c)/3; 
+  console.log(avg); 
+}
 
-
+calcAvg(2,4,6)
 
 
 

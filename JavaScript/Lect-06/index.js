@@ -42,16 +42,58 @@
 // printInfo(23); 
 // ------------
 
-function sum(a, b){
-  console.log(a+b); 
-}
+// function sum(a, b){
+//   console.log(a*b); 
+// }
 
-sum(1,2); 
-sum(4.5,9);
-
-
+// sum(1,2); 
+// sum(4.5,9);
 
 
 
-;lklj
-ojfldj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
