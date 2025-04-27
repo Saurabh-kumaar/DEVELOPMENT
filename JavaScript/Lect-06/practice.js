@@ -45,23 +45,62 @@
 // create a table for any number 
  
 
-function table(n){
-  for(let i=n; i<=n*10; i+=n){ 
-    console.log(i); 
+// function table(n){
+//   for(let i=n; i<=n*10; i+=n){ 
+//     console.log(i); 
+//   }
+// }
+
+// table(4); 
+
+// ------------------------------- 
+
+// Create a function that returns the sum of num from 1 to n 
+
+// function sum(n) { 
+//   let sum = 0; 
+//   for(let i=1; i<=n; i++){ 
+//     sum += i; 
+//    } 
+//    return sum; 
+// }
+
+//  ------------------------------- 
+
+// create a function that returns the concatenation of all string in a Array.  
+
+
+// let str = ["my", "name", "is", "devil"];
+
+// function concat(str){
+//   let result = "";
+
+//   for(let i=0; i<str.length; i++){
+//     result += str[i]; 
+//   }
+
+//   return result; 
+// }
+
+// ------------------------------------ 
+
+// what will be the output of this code ...
+
+
+
+let greet = "hello"; 
+
+function changeGreet() {
+  let greet = "namaste"; 
+  console.log(greet); 
+  function innerGreet(){
+    console.log(greet); 
   }
 }
-
-table(4); 
-
-
-
-
-
-
-
-
-
-
+ 
+console.log(greet); 
+changeGreet(); 
+ 
 
 
 

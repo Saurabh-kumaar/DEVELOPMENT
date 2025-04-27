@@ -49,22 +49,82 @@
 // sum(1,2); 
 // sum(4.5,9);
 
+// ----------------------- 
 
+      // Return keyword 
 
+// function sum(a, b) {
+//   console.log("hello"); 
+//   console.log("hello"); 
 
+//   return a+b; 
+// }
+//  console.log(sum(3,4)); 
 
+// ------------------------------ 
 
+      // what is scope 
 
+// let sum  = 90;  // Global scope
 
+// function calSum(a,b) {
+//   let sum = a + b;    // function scope
+//   console.log(sum); 
+// }
 
+// calSum(2,5);  
+// console.log(sum); 
+ 
+// -------------------------- 
 
+      // Block scope 
 
+// { 
+//   let a = 4;  
+//   // console.log(a); 
+// }
+// console.log(a); 
+// ---------
 
+// for(let i=1; i<=5; i++){
+//   console.log(i);  // ----- it will work because of function
+// }
+// console.log(i)  // -------- it will not work
 
+// ---------- 
 
+// let age = 123; 
+// if(age >= 18){ 
+//   let str = "adult"; 
+//    console.log(str); 
+// }
 
+// ----------------------------------- 
 
+      // Laxical scope
+      
+// function outFun(){
+//   let a = 4; 
+//   let b = 2; 
+//   function innerFuc(){ 
+//     console.log(a);  
+      
+//   } 
+//   innerFuc(); 
+// }
 
+// -------- 
+
+// function bigFun() {
+//   let x = 3; 
+//   let y = 5; 
+//   function smallFun(){ // ----- function scope
+//     console.log(x); 
+//     console.log(y); 
+//   }
+//   smallFun();  
+//   console.log(x); 
+// }
 
 
 
