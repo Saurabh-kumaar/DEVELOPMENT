@@ -96,7 +96,7 @@ function changeGreet() {
   function innerGreet(){
     console.log(greet); 
   }
-}
+}kafj 
  
 console.log(greet); 
 changeGreet(); 
