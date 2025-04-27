@@ -168,7 +168,50 @@
 
             // Higher Order Functions 
 
+// function oddOrEvenFactory(request) {
+//   if(request == "odd") {
+//     let odd = function(n) {
+//       console.log(!(n%2 == 0)); 
+//     }
+
+//     return odd; 
+//   } else if (request == "even") {
+//     let even = function(n) {
+//       console.log(n%2 == 0); 
+//     } 
+    
+//     return even; 
+//   } else {
+//     console.log("wrong request"); 
+//   }
+// }
+
+// let request = "odd"; 
+
+// ------------------------------------------------- 
+
+
+                // Methods  
+
+
+// const calculator = {
+//   num: 30,
   
+//   add: function(a, b) {
+//     return a+b; 
+//   }, 
+
+//   sub: function(a, b) {
+//     return a-b;
+//   }, 
+
+//   mul: function(a, b) {
+//     return a*b; 
+//   }
+// };
+
+// ------------------------------------- 
+
 
 
 
