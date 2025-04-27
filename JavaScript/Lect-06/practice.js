@@ -86,20 +86,18 @@
 
 // what will be the output of this code ...
 
+// let greet = "hello"; 
 
+// function changeGreet() {
+//   let greet = "namaste"; 
+//   console.log(greet); 
+//   function innerGreet(){
+//     console.log(greet); 
+//   }
+// }
 
-let greet = "hello"; 
-
-function changeGreet() {
-  let greet = "namaste"; 
-  console.log(greet); 
-  function innerGreet(){
-    console.log(greet); 
-  }
-}kafj 
- 
-console.log(greet); 
-changeGreet(); 
+// console.log(greet); 
+// changeGreet(); 
  
 
 

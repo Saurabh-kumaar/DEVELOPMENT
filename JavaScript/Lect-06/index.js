@@ -127,17 +127,48 @@
 // }
 
 
+// ---------------------------------------- 
 
+          // Function Expression :- 
 
+//  let sum = function(a, b) {
+//   return a+b; 
+// }  
 
+// -------------- 
+ 
+// let hello = function() { 
+//   console.log("hello"); 
+// } 
 
+// --------------- 
 
+// let devil = function(){
+//   console.log("kya hal hai"); 
+// }
 
+// ---------------------------------------- 
 
+            // Higher order functions 
 
+// function multipleGreet(func, n) {
+  
+//   for(let i=1; i<=n; i++){
+//      func(); 
+//   }
+// }
+ 
+// let greet = function() {
+//   console.log("hello"); 
+// }
 
+// multipleGreet(greet, 13); 
 
+// --------------------------------------------- 
 
+            // Higher Order Functions 
+
+  
 
 
 
