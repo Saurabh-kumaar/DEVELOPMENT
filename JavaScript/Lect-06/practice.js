@@ -102,26 +102,48 @@
 // ========================================================== 
 // ==========================================================
 
+// Qs 1:- 
 
 // write a javaScript function that returns array elements larger
 //  than a Number. 
-  
-let arr = [8, 9, 10, 1, 2, 3, 4, 5, 6, 7]; 
-let num = 5; 
 
-function getElements(arr, num) {
-  for(let i=0; i< arr.length; i++) {
-    if(arr[i] > num) {
-      console.log(arr[i]); 
+// let arr = [8, 9, 10, 1, 2, 3, 4, 5, 6, 7]; 
+// let num = 5; 
+
+// function getElements(arr, num) {
+//   for(let i=0; i< arr.length; i++) {
+//     if(arr[i] > num) {
+//       console.log(arr[i]); 
+//     }
+//   }
+// }
+// getElements(arr, num); 
+
+// ------------------------------------------------------- 
+
+// Qs 4:-
+
+    // Write a javaScript function to count the number of vowels in a string argument. 
+
+    let str = "apnacollege ka development"
+
+    function countVowels(str) {
+      let count = 0; 
+      for(let i=0; i<str.length; i++) {
+        if ( 
+          str.charAt(i) == "a" || 
+          str.charAt(i) == "e" || 
+          str.charAt(i) == "i" || 
+          str.charAt(i) == "o" || 
+          str.charAt(i) == "u"
+        ) { 
+          count++; 
+        }
+      }
+      return count; 
     }
-  }
-}
-getElements(arr, num); 
 
-
-
-
-
+    console.log(countVowels(str));
 
 
 
