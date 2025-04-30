@@ -117,30 +117,96 @@
 
             // Spread 
 
- let arr = [1, 2, 3, 4, 5]; 
- let newArr = [...arr]; 
+//  let arr = [1, 2, 3, 4, 5]; 
+//  let newArr = [...arr]; 
 
 
-let chars = [..."heyEveryone"]; 
+// let chars = [..."heyEveryone"]; 
+
+// let odd = [1, 3, 5, 7, 9]; 
+// let even = [2, 4, 6 ,8, 10]; 
+
+// let nums = [...odd, ...even];  // both will add 
+
+// ------------------------------------------------- 
+
+
+// const data = {
+//     email: "devil06@gmail.com",
+//     password: "abcde",
+// }; 
+
+// const datalist = {...data, id:123, country:"india" }; 
+
+// // ------ 
+
+// let arr = [2, 3, 5, 6, 7]; 
+// let obj1 = {...arr}; 
+// let obj2 = {..."hello"}; 
+ 
+
+// ---------------------------------------------- 
+
+            // Rest 
+
+// function sum(...args) {
+//     // arguments 
+//     for(let i=0; i<args.length; i++) {
+//         console.log("you gave us: ", args[i]); 
+//     }
+// }
+
+// function min() {
+//     console.log(arguments.length); 
+// } 
+
+// -------- 
+// sum :-
+// function sum(...args) {
+//     return args.reduce((sum, el) => sum + el); 
+// } 
+// ----- 
+
+// min :- 
+// function min(msg, ...args) { 
+//     console.log(msg); 
+//     return args.reduce((min, el) => {
+//         if(min > el) {
+//             return el; 
+//         } else {
+//             return min; 
+//         }
+//     })
+// }
+
+// -------------------------------------------------- 
+
+                // Destructuring // add break, indivisual print. 
+
+// let names = ["tony", "rahul", "raju", "devil", "xyz"]; 
+
+// let [winner, runnerup, secondRunnerup, ...others] = names; 
+
+// objects :- 
+
+// const Employee = {
+//     name: "saurabh", 
+//     age: 18, 
+//     city: "Benguluru", 
+//     Position: "SDE2", 
+//     username: "saurabh123@gmail.com", 
+//      password: "hello",
+//     time: "23:4",
+// };
+ 
+// let {username:user , password:pass, } = Employee; 
 
 
 
+// =============================================================================================================
+ 
+    // Practices Questions :-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-// ==================================================================================== 
-
-    // Practices Questions :- 
 // check if num is multiple of 10 or not 
 
 // let nums = [10, 20, 30, 40]; 
@@ -165,6 +231,79 @@ let chars = [..."heyEveryone"];
 
 
 // ======================================================================================= 
+
+                // Assignment-8  
+
+// Qs 1:- square ans sum the array elements using the arrow function and then find the 
+// average of the array .  
+ 
+// let nums = [1, 2, 3, 4, 5];   
+
+// const square = nums.map((num) => num * num); // map use square of each nums.
+// console.log(square);         // then it - 1, 4, 9, 16, 25
+
+// let sum = square.reduce((acc, cur) => acc + cur, 0);  // find total nums square then find avg them all. 
+// let avg = sum / nums.length; 
+// console.log(avg); 
+
+// --------------------------------------------- 
+
+// Qs 2:- 
+
+// create a new array using the map function whose each element is equal to the 
+// original element plus 5. 
+
+// let nums = [1, 3, 5, 6, 7, -8];   
+// let newNums = nums.map(num => num + 5); 
+// console.log(newNums); 
+
+// // console.log(nums.map((num) => num + 5)); 
+
+
+// Qs 3:- 
+
+// Creata a new array whose elements are in uppercase of words present in the original array. 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
