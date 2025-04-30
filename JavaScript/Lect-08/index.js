@@ -264,7 +264,13 @@
 
 // Creata a new array whose elements are in uppercase of words present in the original array. 
 
- 
+
+// let arr = ["adam", "bob", "catlyn", "donald"]; 
+// console.log(arr.map((arr) => arr.toUpperCase())); 
+
+
+// Qs 4:- 
+
 
 
 
