@@ -115,7 +115,7 @@ input.setAttribute("placeholder", "username");
 let btn = document.querySelector("#btn"); 
 btn.classList.add("btnstyle");  
 
-// Qs 4:- 
+// Qs 4:- df 
 
 let h1 = document.createElement("h1"); 
 h1.innerHTML = "<u>DOM Practice</u>";  
