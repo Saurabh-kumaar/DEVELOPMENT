@@ -146,12 +146,35 @@
 
         // Form events
 
-let form = document.querySelector("form"); 
+// let form = document.querySelector("form"); 
 
-form.addEventListener("submit", function (event) {
-        // event.preventDefault();
-        alert("form submitted"); 
-}); 
+// form.addEventListener("submit", function (event) {
+//          event.preventDefault();
+//          console.dir(form); 
+//         // alert("form submitted");  
+//         // let inp = document.querySelector("input");  
+
+//         // console.log(inp); 
+//         // console.dir(inp); 
+//         // console.log(inp.value); 
+
+//         // let user = document.querySelector("#user"); 
+//         // let pass = document.querySelector("#pass"); 
+
+//         // console.log("user name = " + user.value); 
+//         // console.log("user pass = " + pass.value);
+
+//         // -----------
+
+//         let user = this.elements[0]; 
+//         let pass = this.elements[1]; 
+
+//         console.log(user.value); 
+//         console.log(pass.value);  
+
+//         alert(`Hii ${user.value}, your password is set to ${pass.value}`); 
+// }); 
+
 
 
 
