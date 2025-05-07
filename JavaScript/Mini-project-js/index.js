@@ -51,7 +51,3 @@ btn.addEventListener("click", function () {
 
 
 
-
-
-
-
