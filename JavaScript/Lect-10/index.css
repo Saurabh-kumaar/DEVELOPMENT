@@ -11,15 +11,24 @@ body {
 }
   */
 
-.box{
+/* .box{
   width: 100px;
   height: 100px; 
   background-color: yellow;
   border: 1px solid black;
+} */
+
+/* =============================================  */
+
+    /* Assignment :- */ 
+
+#box {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 20px;
+  
 }
-
-
-
 
 
 

@@ -203,15 +203,40 @@
 // ===================================================================================================
 
                 // Assignment Questions :- 
+ 
+
+// let box = document.querySelector("#box");
+//         box.addEventListener("mouseout", function () {
+//             console.log("Mouse left the box");
+//         });
+ 
+//          document.addEventListener("keypress", function (event) {
+//                 console.log("Key pressed: " + event.key);
+//             });
+
+//         document.addEventListener("Scroll", function () {
+//                 console.log("key was scrolled"); 
+//         });
+
+//         document.addEventListener("load", function()  {
+//                 console.log("page fully loaded"); 
+//         });
+
+// ------------------------------------------------------------------
 
 
 
+let btn = document.createElement("button");
+btn.textContent = "click me!"; 
+btn.style.padding = "10px 20px"; 
+btn.style.fontSize = "16px";
 
 
+document.body.appendChild(btn); 
 
-
-
-
+btn.addEventListener("click", function () {
+        btn.style.backgroundColor = "green"; 
+});
 
 
 
@@ -233,4 +258,4 @@
 
 
 
-                
+
