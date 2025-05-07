@@ -1,23 +1,42 @@
 
-let div = document.querySelector("div"); 
+              // stop bubbling :- 
+
+// let div = document.querySelector("div"); 
+// let ul = document.querySelector("ul"); 
+// let lis = document.querySelectorAll("li"); 
+
+// div.addEventListener("click", function() {
+//   console.log("div was clicked"); 
+// }); 
+
+// ul.addEventListener("click", function(event) {
+//  // event.stopPropagation();  // it is use for stop the parents print
+//    console.log("ul was clicked"); 
+// });
+
+// for(li of lis){
+//   li.addEventListener("click", function (event) { 
+//   //   event.stopPropagation(); 
+//     console.log("li was clicked"); 
+//   });
+// }
+ 
+// ==================================================================== 
+
+let btn = document.querySelector("button"); 
 let ul = document.querySelector("ul"); 
-let lis = document.querySelectorAll("li"); 
+let inp = document.querySelector("input"); 
 
-div.addEventListener("click", function() {
-  console.log("div was clicked"); 
-}); 
 
-ul.addEventListener("click", function(event) {
-  event.stopPropagation(); 
-   console.log("ul was clicked"); 
+btn.addEventListener("click", function () {
+  console.log(inp.value);  
+  inp.value = "";       // delete after input
 });
 
-for(li of lis){
-  li.addEventListener("click", function (event) { 
-    event.stopPropagation(); 
-    console.log("li was clicked"); 
-  });
-}
+
+
+
+
 
 
 
