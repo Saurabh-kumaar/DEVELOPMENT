@@ -32,7 +32,7 @@ btn.addEventListener("click", function () {
   console.log(inp.value);  
   inp.value = "";       // delete after input
 });
-
+jkljf 
 
 
 
