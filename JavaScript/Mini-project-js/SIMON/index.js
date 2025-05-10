@@ -39,14 +39,13 @@ function levelUp() {
   console.log(randColor); 
   btnFlash(randBtn); 
 
-}
+}dfg 
  
-function btnPress{
+// function btnPress{ 
 
-   
 
-}
- 
+// }
+
 
 
 
