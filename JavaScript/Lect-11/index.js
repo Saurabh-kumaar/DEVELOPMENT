@@ -10,7 +10,25 @@
 //   devil(); 
 // }
 
-// demo(); 
+// demo();  
+
+// ======================================= 
+
+// function one() {
+//   return 2; 
+// }  
+
+// function two() {
+//   return one() + one(); 
+// }
+ 
+// function three() {
+//   let ans = two() + one(); 
+//   console.log(ans); 
+// }
+
+// three(); 
+
 
 // ----------------------------------- 
 
@@ -136,38 +154,39 @@
           // Refactoring with Promises 
 
 
-function savetoDb(data) {
-  return new Promise((resolve, reject) => {
-    let internetSpeed = Math.floor(Math.random () * 10) + 1; 
-    if(internetSpeed > 4) {
-      resolve("success : data was saved "); 
-    } else {
-      reject("failure : weak connection")
-    }
-  });
-}
+// function savetoDb(data) {
+//   return new Promise((resolve, reject) => {
+//     let internetSpeed = Math.floor(Math.random () * 10) + 1; 
+//     if(internetSpeed > 4) {
+//       resolve("success : data was saved "); 
+//     } else {
+//       reject("failure : weak connection")
+//     }
+//   });
+// }
  
-// catch & then  
-
-savetoDb("apna college")  // req = promise object 
-  .then(() => {
-    console.log("promise was resolved"); 
-    savetoDb("hello world").then(() => {
-      console.log("data2 saved"); 
-    });
-   })
-  .catch(() => {
-    console.log("promise was rejected");  
-   });
-// Promise chaining :- 
-
-
-
-
-
-
+// // catch & then  
+ 
+// savetoDb("apna college")
+//   .then(() => {
+//     console.log("data1 saved"); 
+//     return savetoDb("hello world"); 
+//   })
+//   .then(() => {
+//     console.log("data2 saved");
+//     return savetoDb("devil is king")
+//   })
+//   .then(() => {
+//     console.log("data3 saved"); 
+//   })
+//   .catch(() => {
+//     console.log("promise was rejected"); 
+//   });  
 
 
+// =============================================================================== 
+
+ 
 
 
 
