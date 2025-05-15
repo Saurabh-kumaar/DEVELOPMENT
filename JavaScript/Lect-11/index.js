@@ -134,7 +134,7 @@
 // =============================================================================== 
 
           // Refactoring with Promises 
-          
+
 
 function savetoDb(data) {
   return new Promise((resolve, reject) => {
@@ -147,9 +147,19 @@ function savetoDb(data) {
   });
 }
  
-// savetoDb("hello guys ");
+// catch & then  
 
-
+savetoDb("apna college")  // req = promise object 
+  .then(() => {
+    console.log("promise was resolved"); 
+    savetoDb("hello world").then(() => {
+      console.log("data2 saved"); 
+    });
+   })
+  .catch(() => {
+    console.log("promise was rejected");  
+   });
+// Promise chaining :- 
 
 
 
