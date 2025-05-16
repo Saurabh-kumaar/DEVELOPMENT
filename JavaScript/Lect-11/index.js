@@ -78,23 +78,35 @@
  
         // Callback Hell 
 
-// h1 = document.querySelector("h1"); 
+h1 = document.querySelector("h1"); 
 
-// // h1.style.color = "pink"; 
+// h1.style.color = "pink"; 
 
-// function changeColor(color, delay, nextchangeColor) {
-//   setTimeout(() => {   // it is change the color and do delay work 
-//     h1.style.color = color;  
-//     if(nextchangeColor) nextchangeColor(); 
-//   }, delay); 
-// }
+function changeColor(color, delay) {
+  return new Promise((resolve, reject) =>{
+    setTimeout(() => {
+      h1.style.color = color; 
+      resolve("color changed"); 
+    }, delay);
+  });
+} 
 
-// changeColor("red", 1000, () =>{
-//   changeColor("brown", 2000, () =>{
-//     changeColor("green", 5000); 
-//   }); 
-// }); 
-
+changeColor("red", 1000)
+  .then(() => {
+    console.log("red color was completed"); 
+    return changeColor("yellow", 1000); 
+  })
+  .then(() => {
+    console.log(" yellow color was completed"); 
+    return changeColor("green", 1000); 
+  })
+  .then(() => {
+    console.log("green color was completed"); 
+    return changeColor("blue", 1000); 
+  })
+  .then(() => {
+    console.log("blue color was completed"); 
+  }); 
 
 // changeColor("pink", 3000); 
 // changeColor("magenta", 5000); 
@@ -168,22 +180,26 @@
 // // catch & then  
  
 // savetoDb("apna college")
-//   .then(() => {
+//   .then((result) => {
 //     console.log("data1 saved"); 
+//     console.log("result of promise:", result); 
 //     return savetoDb("hello world"); 
 //   })
-//   .then(() => {
+//   .then((result) => {
 //     console.log("data2 saved");
+//     console.log("result of promise:", result); 
 //     return savetoDb("devil is king")
 //   })
-//   .then(() => {
-//     console.log("data3 saved"); 
+//   .then((result) => {
+//     console.log("data3 saved");
+//     console.log("result of promise: ", result);  
 //   })
-//   .catch(() => {
+//   .catch((error) => {
+//     console.log("error of promise", error);
 //     console.log("promise was rejected"); 
 //   });  
 
-
+// =============================================================================== 
 // =============================================================================== 
 
  
