@@ -42,42 +42,40 @@
 
 // change color with the help of async and await function 
 
-h1 = document.querySelector("h1"); 
+// h1 = document.querySelector("h1"); 
 
-function changeColor(color, delay) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => { 
-      let num = Math.floor(Math.random() * 5) +1; 
-      if(num > 3) {
-        reject("promise rejected"); 
-      } 
+// function changeColor(color, delay) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => { 
+//       let num = Math.floor(Math.random() * 5) +1; 
+//       if(num > 3) {
+//         reject("promise rejected"); 
+//       } 
 
-      h1.style.color = color; 
-      console.log(`color changed to ${color}!`); 
-      resolve("color changed!"); 
-    } , delay); 
-  }); 
-}
+//       h1.style.color = color; 
+//       console.log(`color changed to ${color}!`); 
+//       resolve("color changed!"); 
+//     } , delay); 
+//   }); 
+// }
 
-async function demo() {   // handling rajection 
-  try { 
-    await changeColor("red", 1000);
-    await changeColor("pink", 2000);  
-    await changeColor("green", 3000); 
-    await changeColor("orange", 4000); 
-    await changeColor("blue", 5000); 
-  } catch (err) {
-    console.log("error caught"); 
-    console.log(err); 
-  }
-  
- 
-}
+// async function demo() {   // handling rajection 
+//   try { 
+//     await changeColor("red", 1000);
+//     await changeColor("pink", 2000);  
+//     await changeColor("green", 3000); 
+//     await changeColor("orange", 4000); 
+//     await changeColor("blue", 5000); 
+//   } catch (err) {
+//     console.log("error caught"); 
+//     console.log(err); 
+//   }
+// }
   
 // --------------------------------------------------------------
  
-
-
+let jsoRes = '{"fact":"People who are allergic to cats are actually allergic to cat saliva or to cat dander. If the resident cat is bathed regularly the allergic people tolerate it better.","length":165}';
+console.log(jsoRes); 
 
 
 
