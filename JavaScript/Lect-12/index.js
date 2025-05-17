@@ -84,10 +84,10 @@ console.log(validRes);
 // let student = {
 //         age: 34, 
 //         name: "devil"
-// };
+// };adf
 
 // ------------------------
-
+adf 
 
 
 aefef 
