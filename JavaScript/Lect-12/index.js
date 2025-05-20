@@ -98,7 +98,7 @@ fetch(url)
         })
     .then((data) => {
         console.log(data.fact);
-        return fetch(url); 
+        return fetch(url);df
     })
     .then((res) => {
         return res.json9(); 
