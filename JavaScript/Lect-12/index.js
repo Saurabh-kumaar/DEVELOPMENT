@@ -104,7 +104,7 @@ fetch(url)
         return res.json9(); 
     })
     .then((data2) => {
-        console.log("data2" )
+        console.log("data2" )asdij 
     })
     .catch((err) => {
         console.log("ERROR -", err); 
