@@ -93,7 +93,7 @@ let url = "https://catfact.ninja/fact";
  
 fetch(url)
     .then((res) => {
-        console.log(res);  
+        console.log(res);  adf 
         return res.json();
         })
     .then((data) => {
