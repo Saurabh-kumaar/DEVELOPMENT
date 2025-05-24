@@ -259,7 +259,7 @@ btn.addEventListener("click", async () => {
     list.innerText = "";
 
     for(col of colArr) {
-        console.log(col.name);  adf 
+        console.log(col.name);  iour
 
         let li = document.createElement("li"); 
         li.innerText = col.name; 
