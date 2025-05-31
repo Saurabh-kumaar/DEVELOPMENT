@@ -12,3 +12,6 @@ for(let i=2; i<args.length; i++) {
   console.log("hello to", args[i])
 }
  
+
+
+console.log("hello ji")
