@@ -15,8 +15,11 @@
 // console.log("hello ji"); 
 
 
-const someValue = require("./Math"); 
-console.log(someValue); 
+// const Math = require("./Math"); 
+
+// console.log(Math.sum(2,3))
+
+// console.log(Math); 
 
 
 // console.log("Script started");
@@ -30,7 +33,12 @@ console.log(someValue);
 // console.log(math.g);         // 9.8
 // console.log(math.PI);        // 3.14
 
+// -------------------------------------------- 
+    // for export in directories 
 
+
+const info = require("./fruits"); 
+console.log(info); 
 
 
 
