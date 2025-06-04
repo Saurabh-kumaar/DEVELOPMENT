@@ -64,28 +64,8 @@ import { g, mul, sum, PI} from './Math.js';
 console.log(sum(1, 2)); 
 console.log("PI:", PI);
 console.log("mul:", mul(4, 2));
-console.log("Gravity:", g);   
+console.log("Gravity:", g);  
 
 
 
-
-cfhj
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+jhk
