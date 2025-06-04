@@ -37,8 +37,52 @@
     // for export in directories 
 
 
-const info = require("./fruits"); 
-console.log(info); 
+
+// const info = require("./fruits"); 
+// console.log(info); 
+
+
+// it is for run text in terminal made by -- and // any name print 
+
+// const figlet = require("figlet"); 
+
+// figlet("Devil", function (err, data) {
+//   if(err) {
+//     console.log("something went wrong.."); 
+//     console.dir(err); 
+//     return; 
+//   }
+//   console.log(data); 
+// });
+
+// ---------------------------------------
+
+// it is use for import Math.js works 
+
+import { g, mul, sum, PI} from './Math.js';
+
+console.log(sum(1, 2)); 
+console.log("PI:", PI);
+console.log("mul:", mul(4, 2));
+console.log("Gravity:", g);   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
