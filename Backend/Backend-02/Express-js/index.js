@@ -26,14 +26,66 @@ app.get("/", (req, res) => {
 })
  
 app.get("/", (req, res) => {
-  res.send("you contacted apple path"); 
+  res.send("you contacted apple path "); 
 })
 
 app.get("/", (req, res) => {
   res.send("you contacted orange path"); 
-})
+}) 
 
 app.get("/", (req, res) => {
   res.send("this path does not work "); 
 }); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
