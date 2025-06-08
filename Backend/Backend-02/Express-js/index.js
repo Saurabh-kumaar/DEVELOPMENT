@@ -16,7 +16,6 @@ app.use((req, res) => {
   //   name: "apple", 
   //   color: "red",
   // });  
-
   let code = "<h1>Fruits</h1> <ul><li>apple</li><li>banana</li></ul>"; 
   res.send(code); 
 });
