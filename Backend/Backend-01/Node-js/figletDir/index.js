@@ -15,7 +15,4 @@ figlet("Devil", function (err, data) {
 
 
 
-
-
-
-sg 
+adff
