@@ -4,6 +4,7 @@ const app = express();
 
 const port = 8080; 
 
+app.use(express.static("public"));   
 app.set("view engine", "ejs"); 
 
 app.get("/", (req, res) => {
@@ -18,13 +19,22 @@ app.get("/rolldice", (req, res) => {
 
 
 app.get("/ig/:username", (req, res) => { 
-  const followers = ["rohti", "bob", "vikash", "piyush"]; 
+  // const followers = ["rohti", "bob", "vikash", "piyush"]; 
   let { username } = req.params;
-  res.render("instagram.ejs", {username, followers }); 
+  const instaData = require("./data.json"); 
+  const data = instaData[username];
+  // console.log(data); 
+  if(data) {
+      res.render("instagram.ejs", {data  });
+  } else {
+    res.render("error.ejs");
+  }
+  
+  // res.render("instagram.ejs", { data : instaData});  
  });
 
 
- 
+
 app.listen(port, () => {
   console.log(`listening on port ${port}`); 
 }); 
