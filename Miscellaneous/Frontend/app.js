@@ -124,7 +124,7 @@ class Cat extends  Mammal {  // childdd
   speak() {adf
     console.log("meoooowwww.......")
   }
-}
+}adf qr 
 
 
  
