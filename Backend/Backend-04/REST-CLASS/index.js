@@ -1,27 +1,31 @@
 const express = require("express"); 
 const app = express(); 
 const port = 8080; 
-const path = require("path"); 
+const path = require("path");
+const { v4: uuidv4 } = require(('uuid'));  
 
 app.use(express.urlencoded({ extended: true})); 
 
 app.set("view engine", "ejs"); 
 app.set("views", path.join(__dirname, "views")); 
 
-app.set(express.static(path.join(__dirname, "public"))); 
+app.use(express.static(path.join(__dirname, "public"))); 
 
 let posts = [
   {
+    id: uuidv4(),
     username : "apnaduniya", 
     content : "I Love Coding"
   },
   {
+    id:  uuidv4(),
     username : "Gautam Rathour", 
     content : "he is doing hard working"
   },
   {
+    id:  uuidv4(),
     username : "Rinchu pade", 
-    content : "he is doing farmacy"
+    content : "I got selected"
   },
 ]; 
  
@@ -30,11 +34,45 @@ app.get("/", (req, res) => {
 }); 
 
 
+app.get("/posts/new", (req, res) => {
+  res.render("new.ejs"); 
+});
+
+app.post("/posts", (req, res) => {
+  // console.log(req.body);
+   let { username, content } = req.body; 
+   let id = uuidv4(); 
+  posts.push({ id , username, content }); 
+  // res.send("post requests working");
+  res.redirect("/"); 
+
+});
+
+
+
+
+app.get("/posts/:id", (req, res) => {
+  let { id } = req.params; 
+  let post = posts.find((p) => id === p.id); 
+  res.render("show.ejs", { post }); 
+  // res.send("request working"); 
+});
+
+app.patch("/posts/:id", (req, res) => {
+  let { id } = req.params; 
+  let newContent = req.body.content;
+  console.log(newContent); 
+  res.send("patch request working"); 
+}); 
+
+
+
 app.listen(port, () => {
   console.log("listening to port : 8080 ");
 });
 
 
+ 
 
 
 

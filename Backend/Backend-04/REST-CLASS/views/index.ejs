@@ -12,10 +12,18 @@
       <div class="posts">
         <h3 class="user">@<%= post.username %></h3>
         <h4 class="content"><%= post.content %></h4>
+        <br>
+        <a href="/posts/<%=post.id%>">See in Details</a>
       </div>
 
   <% }%>
   
-</body>sgtr
+
+  <br>
+  <br>
+  <a href="/posts/new">Create New Posts</a>
+  
+</body>
 </html>
+
 

@@ -2,10 +2,15 @@ h1 {
   color: brown;
 }
 
-.post{
-  background-color: blanchedalmond;
+.posts{
+  background-color: rgb(248, 212, 159);
 }
 
 .user {
   font-style: italic;
+  /* font-style: inherit; */
 }
+
+
+
+
