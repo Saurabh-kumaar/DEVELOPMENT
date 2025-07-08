@@ -20,8 +20,8 @@ let posts = [
     username : "apnaduniya", 
     content : "I Love Coding"
 
-  },
-  { fd 
+  },pa'dok 
+  { fd adf 
     id:  uuidv4(),
     username : "Gautam Rathour", 
     content : "he is doing hard working"
