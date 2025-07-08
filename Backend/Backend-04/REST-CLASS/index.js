@@ -21,7 +21,7 @@ let posts = [
     content : "I Love Coding"
 
   },
-  {
+  { fd 
     id:  uuidv4(),
     username : "Gautam Rathour", 
     content : "he is doing hard working"
