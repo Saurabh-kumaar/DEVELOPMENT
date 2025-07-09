@@ -15,7 +15,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public"))); 
 
 let posts = [
-  {woerjij
+  {woerjijl;dja 
     id: uuidv4(),lajf 
     username : "apnaduniya", 
     content : "I Love Coding"
