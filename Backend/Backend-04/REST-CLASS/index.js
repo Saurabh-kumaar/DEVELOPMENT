@@ -2,8 +2,8 @@ const express = require("express");
 const app = express(); 
 const port = 8080; 
 const path = require("path");
-const { v4: uuidv4 } = require(('uuid'));
-const methodOverride = require("method-overri")
+const { v4: uuidv4 } = require('uuid');
+const methodOverride = require("method-override");
 
 app.use(express.urlencoded({ extended: true})); 
 app.use(methodOverride("_method") );
@@ -16,12 +16,12 @@ app.use(express.static(path.join(__dirname, "public")));
 
 let posts = [
   {
-    id: uuidv4(),
+    id: uuidv4(),lajf 
     username : "apnaduniya", 
     content : "I Love Coding"
 
-  },pa'dok 
-  { fd adf 
+  },
+  { 
     id:  uuidv4(),
     username : "Gautam Rathour", 
     content : "he is doing hard working"
