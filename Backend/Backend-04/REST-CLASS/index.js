@@ -15,8 +15,8 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public"))); 
 
 let posts = [
-  {woerjijl;dja ;lajf 
-    id: uuidv4(),lajf 
+  {
+    id: uuidv4(),
     username : "apnaduniya", 
     content : "I Love Coding"
 
@@ -67,19 +67,19 @@ app.get("/posts/:id", (req, res) => {
 
 app.patch("/posts/:id", (req, res) => {
   let { id } = req.params; 
-  let newContent = req.query.content;
-  let post = posts.find((p) => id === p.id); 
+  let newContent = req.body.content;
+  let post = posts.find((p) => p.id === id); 
   post.content = newContent;
   console.log(post); 
 
   // console.log(newContent); 
-  res.send("patch request working"); 
+  res.redirect("/posts"); 
 }); 
 
 
 app.get("/posts/:id/edit", (req, res) => {
   let { id } = req.params; 
-  let post = posts.find((p) => id === p.id); 
+  let post = posts.find((p) => p.id === id); 
   res.render("edit.ejs", { post });
 
 })
