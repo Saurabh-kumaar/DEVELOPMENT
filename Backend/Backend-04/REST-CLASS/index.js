@@ -75,14 +75,22 @@ app.patch("/posts/:id", (req, res) => {
   // console.log(newContent); 
   res.redirect("/posts"); 
 }); 
-
+ 
 
 app.get("/posts/:id/edit", (req, res) => {
   let { id } = req.params; 
   let post = posts.find((p) => p.id === id); 
   res.render("edit.ejs", { post });
 
-})
+});
+
+app.delete("/posts/:id", (req, res) => {
+  const  { id } = req.params; 
+  // console.log("Trying to delete post with ID:", id); 
+  posts = posts.filter((p) => p.id !== id); 
+  // res.send("delete success"); 
+  res.redirect("/"); 
+});
 
 
 
