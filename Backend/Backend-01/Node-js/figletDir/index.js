@@ -9,8 +9,3 @@ figlet("Devil", function (err, data) {
   }
   console.log(data); 
 });
-
-
-
-
-oiauf
