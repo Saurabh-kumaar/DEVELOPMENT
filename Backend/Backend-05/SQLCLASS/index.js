@@ -10,16 +10,20 @@ const connection = mysql.createConnection({
 
 });
 
+ 
 try {
   connection.query("SHOW TABLES", (err, result) => {
     if(err) throw err; 
     console.log(result); 
+
   }); 
 } catch (err) {
   console.log(err); 
+  connection.end();
+
 }
 
- 
+
 let getRandomUser = () => {
   return {
     id: faker.string.uuid(),
@@ -28,13 +32,8 @@ let getRandomUser = () => {
      password: faker.internet.password(),
    };
 }
+jaodifj 
+
 
  
  
-
-
-
-
-
-
-
