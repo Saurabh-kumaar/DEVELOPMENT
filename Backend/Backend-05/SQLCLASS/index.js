@@ -98,7 +98,7 @@ uioyiyujhlk
 
 ;lakjdfij 
 
-
+adfe 
 // // Inserting new data 
 // let q = "INSERT INTO user (id, username, email, password) VALUES ?"; 
 
