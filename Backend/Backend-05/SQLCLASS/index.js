@@ -94,11 +94,7 @@ app.patch("/user/:id", (req, res) => {
   res.send("updated"); 
 }); 
 
-uioyiyujhlk
 
-;lakjdfij 
-
-adfe 
 // // Inserting new data 
 // let q = "INSERT INTO user (id, username, email, password) VALUES ?"; 
 
