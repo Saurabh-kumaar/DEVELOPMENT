@@ -103,7 +103,7 @@ app.patch("/user/:id", (req, res) => {
 //   data.push(getRandomUser()); 
 // } 
 adf ljjf 
-adff
+adffadf 
 // try {
 //   connection.query(q, [data], (err, result) => {
 //     if(err) throw err; 
