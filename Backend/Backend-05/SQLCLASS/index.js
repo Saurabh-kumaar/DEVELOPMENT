@@ -84,16 +84,36 @@ app.get("/user/:id/edit", (req, res) => {
   }
 });
 
+// UPDAte (DB) ROUTE 
+app.patch("/user/:id", (req, res) => {
+  let { id } = req.params; 
+  let { password: formPass, username: newUsername } = req.body; 
+  let q = `SELECT * FROM user WHERE id='${id}'`; 
+
+  try {
+    connection.query(q, (err, result) => {
+      if(err) throw err; 
+      let user = result[0];
+      if (formPass != user.password) {
+        res.send("You put Wrong password"); 
+      }  else {
+        let q2 = `UPDATE user SET username='${newUsername}' WHERE id='${id}'`;
+        connection.query(q2 , (err, result) => {
+          if(err) throw err; 
+          res.redirect("/user");  
+        });
+      }
+     });
+
+  } catch (err) {
+    console.log(err); 
+    res.send("some error in DB");
+  }
+});
+
 app.listen("8080", () => {
   console.log("server is listening to port 8080"); 
 }); 
-
-
-// UPDAte (DB) ROUTE 
-app.patch("/user/:id", (req, res) => {
-  res.send("updated"); 
-}); 
-
 
 // // Inserting new data 
 // let q = "INSERT INTO user (id, username, email, password) VALUES ?"; 
@@ -102,8 +122,7 @@ app.patch("/user/:id", (req, res) => {
 // for(let i=1; i<=100; i++) {
 //   data.push(getRandomUser()); 
 // } 
-adf ljjf 
-adffadf 
+
 // try {
 //   connection.query(q, [data], (err, result) => {
 //     if(err) throw err; 
