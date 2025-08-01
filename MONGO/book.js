@@ -24,7 +24,7 @@ const bookSchema = new mongoose.Schema({
     type: Number,
   },
 })
-
+ljadirj 
 const Book = mongoose.model("Book", bookSchema); 
 
 let book1 = new Book({
