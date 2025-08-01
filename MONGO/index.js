@@ -21,17 +21,65 @@ const userSchema = new mongoose.Schema({  // user schema create
 
 const User = mongoose.model("User", userSchema);  // schema ko db collection me convert kar rhe hai
 
-const user1 = new User({
-  name: "Adam",
-  email: "adam@yahoo.in",
-  age: 49,
-}); 
 
-user1.save(); 
+// delete------ mongoose----------- 
+User.findByIdAndDelete("688bb4e9935582c1a1a85576")
+  .then((res) => {
+    console.log(res); 
+  });
+   
+
+
+
+// find update value ----------
+// User.findOneAndUpdate({ name: "sugga bobby"}, {age: 45}, {new: true})
+//   .then((res) => {
+//     console.log(res); 
+//   })
+//   .catch((err) => {
+//     console.log(err); 
+//   });
+
+
+// find ----- search id ---------- 
+// User.findById("688bb2e0811e9c1476e1d373")
+//   .then((res) => {
+//     console.log(res); 
+//   })
+//   .catch((err) => {
+//     console.log(err); 
+//   }); 
+
+
+// inser add function --------------- 
+// User.insertMany([
+//   {name: "Tony", email: "tonybhai@gmail.com", age: 23}, 
+//   {name: "aman", email: "aman@gmail.com", age: 20}, 
+//   {name: "kaju", email: "kaju@gmail.com", age: 21}, 
+// ]).then((res) => {
+//   console.log(res); 
+// });
+
+
+
+
+// const user2 = new User({
+//   name: "devil",
+//   email: "devil@yahoo.in",
+//   age: 22,
+// }); 
+
  
-akljf lhyiu
+// user2 
+//   .save()
+//   .then((res)=> {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err); 
+//   }); 
+ 
 
-adjflkdf 
 
 
 
