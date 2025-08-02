@@ -20,7 +20,7 @@ const connection = mysql.createConnection({
     password: "saurabh@009", 
 
 });adf adferopewiru
-
+sgfr
 let getRandomUser = () => {
   return [
     faker.string.uuid(),
