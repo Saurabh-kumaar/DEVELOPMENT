@@ -19,7 +19,7 @@ const connection = mysql.createConnection({
     database: "delta_app",
     password: "saurabh@009", 
 
-});adf 
+});adf adfer
 
 let getRandomUser = () => {
   return [
