@@ -81,6 +81,7 @@ app.get("/user/:id/edit", (req, res) => {
   } catch (err) {
     console.log(err); 
     res.send("some error in DB");
+    
   }
 });
 
