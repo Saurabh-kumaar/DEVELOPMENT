@@ -19,8 +19,7 @@ const connection = mysql.createConnection({
     database: "delta_app",
     password: "saurabh@009", 
 
-});adf adferopewiru
-sgfr
+});
 let getRandomUser = () => {
   return [
     faker.string.uuid(),
