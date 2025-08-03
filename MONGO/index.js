@@ -28,9 +28,9 @@ User.findByIdAndDelete("688bb4e9935582c1a1a85576")
   .then((res) => {
     console.log(res); 
   });
-   
+   ;oawujioruioanfdfn
 
-
+fs aff 
 
 // find update value ----------
 // User.findOneAndUpdate({ name: "sugga bobby"}, {age: 45}, {new: true})
