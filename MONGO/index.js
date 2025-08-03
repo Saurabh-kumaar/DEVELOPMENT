@@ -23,11 +23,11 @@ const userSchema = new mongoose.Schema({  // user schema create
 const User = mongoose.model("User", userSchema);  // schema ko db collection me convert kar rhe hai
 
 
-// delete------ mongoose----------- 
-User.findByIdAndDelete("688bb4e9935582c1a1a85576")
-  .then((res) => {
-    console.log(res); 
-  });
+// // delete------ mongoose----------- 
+// User.findByIdAndDelete("688c458ba8c5024cc1ea6a77")
+//   .then((res) => {
+//     console.log(res); 
+//   });
    
 
 
@@ -63,21 +63,20 @@ User.findByIdAndDelete("688bb4e9935582c1a1a85576")
 
 
 
-// const user2 = new User({
-//   name: "devil",
-//   email: "devil@yahoo.in",
-//   age: 22,
-// }); 
+const user2 = new User({
+  name: "evil",
+  email: "evil@yahoo.in",
+  age: 21,
+}); 
 
  
-// user2 
-//   .save()
-//   .then((res)=> {
-//     console.log(res);
-//   })
-//   .catch((err) => {
-//     console.log(err); 
-//   }); 
+user2.save()
+  .then((res)=> {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(err); 
+  }); 
  
 
 
