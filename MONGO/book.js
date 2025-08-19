@@ -32,23 +32,32 @@ const bookSchema = new mongoose.Schema({
 
 const Book = mongoose.model("Book", bookSchema); 
 
-let book1 = new Book({
-  title: "marvel Comics v2",
-  author: "Harper lee", 
-  price: "299", 
-  category: "fiction", 
-  genre: ["comics", "superheroes", "fiction"]
-}); 
-
-
-book1
-  .save() 
-  .then((res) => {
+Book.findByIdAndUpdate("688c3933667ce8f259dd0ae9", { price: -50 }, {runValidators: true})
+.then((res) => {
     console.log(res); 
-  })
-  .catch((err) => {
-    console.log(err); 
-  }); 
+  }
+).catch( (err) => {
+  console.log(err);
+});
+
+
+// let book1 = new Book({
+//   title: "marvel Comics v2",
+//   author: "Harper lee", 
+//   price: "299", 
+//   category: "fiction", 
+//   genre: ["comics", "superheroes", "fiction"]
+// }); 
+
+
+// book1
+//   .save() 
+//   .then((res) => {
+//     console.log(res); 
+//   })
+//   .catch((err) => {
+//     console.log(err); 
+//   }); 
 
 
 
@@ -69,3 +78,4 @@ book1
 
 
 
+ 

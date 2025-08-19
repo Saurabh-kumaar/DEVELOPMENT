@@ -19,12 +19,9 @@ const chatSchema = new mongoose.Schema({
       required: true 
 
     }
-})
-asdf 
-;oakjdf
+}); 
 
-oiiiee adf 
+const Chat = mongoose.model("Chat", chatSchema); 
 
-
-
+module.exports = Chat; 
 

@@ -24,21 +24,35 @@ const User = mongoose.model("User", userSchema);  // schema ko db collection me 
 
 
 // // delete------ mongoose----------- 
-// User.findByIdAndDelete("688c458ba8c5024cc1ea6a77")
-//   .then((res) => {
-//     console.log(res); 
-//   });
+User.findByIdAndDelete("688bb2e0811e9c1476e1d373")
+  .then((res) => {
+    console.log(res); 
+  });
    
 
 
 // find update value ----------
-// User.findOneAndUpdate({ name: "sugga bobby"}, {age: 45}, {new: true})
+// User.findOneAndUpdate({ name: "raju" }, { age: 90}, {new: true})
 //   .then((res) => {
 //     console.log(res); 
 //   })
 //   .catch((err) => {
 //     console.log(err); 
 //   });
+
+
+// find value -----------------------
+// User.findById("688fae383a53c54fec02db44")
+//   .then((res) => {
+//     console.log(res); 
+//   })
+//   .catch((err) => {
+//     console.log(err); 
+//   }); 
+
+
+
+
 
 
 // find ----- search id ---------- 
@@ -63,22 +77,24 @@ const User = mongoose.model("User", userSchema);  // schema ko db collection me 
 
 
 
-const user2 = new User({
-  name: "evil",
-  email: "evil@yahoo.in",
-  age: 21,
-}); 
+
+
+// const user2 = new User({
+//   name: "evil",
+//   email: "evil@yahoo.in",
+//   age: 21,
+// }); 
 
  
-user2.save()
-  .then((res)=> {
-    console.log(res);
-  })
-  .catch((err) => {
-    console.log(err); 
-  }); 
+// user2.save()
+//   .then((res)=> {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err); 
+//   }); 
  
 
-adfew
+
 
 
