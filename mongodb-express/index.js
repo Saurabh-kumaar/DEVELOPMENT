@@ -23,7 +23,7 @@ main()
 
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/whatsapp');
+  await mongoose.connect('mongodb://127.0.0.1:27017/fakewhatsapp');
 }
 
 // index route 
@@ -73,6 +73,12 @@ app.post("/chats", (req, res) => {
 //   console.log(res); 
 // });
 
+// New - Show Route 
+app.get("/chats/:id", async (req, res, next) => {
+  let { id } = req.params; 
+  let chat = await Chat.findById(id); 
+  res.render("edit.ejs", { chat }); 
+}); 
 
 
 // edit route --------
