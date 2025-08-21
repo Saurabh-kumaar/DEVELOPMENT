@@ -6,6 +6,8 @@ const mongoose = require("mongoose");
 const path = require("path"); 
 const Chat = require("./models/chat.js");
 const methodOverride = require("method-override"); 
+const ExpressError = require("./ExpressError");
+
 
 
 app.set("views", path.join(__dirname, "views")); 
@@ -26,38 +28,49 @@ async function main() {
   await mongoose.connect('mongodb://127.0.0.1:27017/fakewhatsapp');
 }
 
+
 // index route 
-app.get("/chats", async(req, res) => {
-  let chats = await Chat.find();
+app.get("/chats", async(req, res) => { 
+  try {
+    let chats = await Chat.find();
+    res.render("index.ejs", { chats }); 
+  } catch (err) {
+    next(err);
+  }
   // console.log(chats); 
   // res.send("working"); 
-  res.render("index.ejs", { chats }); 
 });
 
-// new route for chat
+
+
+// New route for chat
 app.get("/chats/new", (req, res) => {
+  // throw new ExpressError(404, "Page not found"); 
   res.render("new.ejs"); 
 });
 
 //  create route 
-app.post("/chats", (req, res) => {
-  let { from, to, msg } = req.body; 
-  let newChat = new Chat({
-    from: from, 
-    to: to, 
-    msg: msg, 
-    created_at: new Date(),
-  });
-  
-  newChat
-    .save()
-    .then((res) => {
-      console.log("chat was saved", res); 
-    })
-    .catch((err ) => {
-      console.log(err); 
+app.post("/chats", async (req, res, next) => {
+  try {
+    let { from, to, msg } = req.body; 
+    let newChat = new Chat({
+      from: from,  
+      to: to, 
+      msg: msg, 
+      created_at: new Date(),
     });
-   res.redirect("/chats");
+
+    await newChat.save(); 
+    res.redirect("/chats");
+  } catch (err) {
+    next(err); 
+  }
+  
+    // newChat
+    //   .save()
+    //   .then((res) => {
+    //     console.log("chat was saved", res); 
+    //   })
 });
 
 
@@ -77,11 +90,15 @@ app.post("/chats", (req, res) => {
 app.get("/chats/:id", async (req, res, next) => {
   let { id } = req.params; 
   let chat = await Chat.findById(id); 
+  if(!chat) {
+    next(new ExpressError(500, "Chat not found")); 
+  }  
   res.render("edit.ejs", { chat }); 
 }); 
 
 
-// edit route --------
+
+// Edit route --------
 app.get("/chats/:id/edit", async (req, res) => {
   let { id } = req.params;
 
@@ -137,10 +154,17 @@ app.delete("/chats/:id", async (req, res) => {
   res.redirect("/chats"); 
 }); 
 
-
+xc 
 
 app.get("/", (req, res) => {
   res.send("root is working"); 
+}); 
+
+
+// Error Handling Middleware
+app.use((err, req, res, next) => {
+  let { status = 500, msg = "Some Error Occured" } = err;
+  res.status(status).send(msg); 
 }); 
 
 
