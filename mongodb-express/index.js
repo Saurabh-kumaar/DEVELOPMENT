@@ -154,7 +154,7 @@ app.delete("/chats/:id", async (req, res) => {
   res.redirect("/chats"); 
 }); 
 sg 
-xc 
+xc khy 
 
 app.get("/", (req, res) => {
   res.send("root is working"); 
