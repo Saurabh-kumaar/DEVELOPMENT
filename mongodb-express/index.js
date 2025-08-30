@@ -50,8 +50,7 @@ app.get("/chats/new", (req, res) => {
 });
 
 //  create route 
-app.post("/chats", async (req, res, next) => {
-  try {
+app.post("/chats", asyncWrap(async(req, res, next) => {
     let { from, to, msg } = req.body; 
     let newChat = new Chat({
       from: from,  
@@ -62,16 +61,14 @@ app.post("/chats", async (req, res, next) => {
 
     await newChat.save(); 
     res.redirect("/chats");
-  } catch (err) {
-    next(err); 
-  }
+  
   
     // newChat
     //   .save()
     //   .then((res) => {
     //     console.log("chat was saved", res); 
     //   })
-});
+}));
 
 
 
@@ -86,16 +83,25 @@ app.post("/chats", async (req, res, next) => {
 //   console.log(res); 
 // });
 
-// New - Show Route 
-app.get("/chats/:id", async (req, res, next) => {
-  let { id } = req.params; 
-  let chat = await Chat.findById(id); 
-  if(!chat) {
-    next(new ExpressError(500, "Chat not found")); 
-  }  
-  res.render("edit.ejs", { chat }); 
-}); 
 
+// using wrapAsync 
+function asyncWrap(fn) {
+  return function (req, res, next) {
+    fn(req, res, next).catch((err) => next(err)); 
+  };
+}
+
+// New - Show Route 
+app.get("/chats/:id", asyncWrap(async (req, res, next) => {
+    let { id } = req.params; 
+    let chat = await Chat.findById(id); 
+    if(!chat) {
+      next(new ExpressError(500, "Chat not found")); 
+    }  
+    res.render("edit.ejs", { chat }); 
+   
+}));
+  
 
 
 // Edit route --------
@@ -132,33 +138,50 @@ app.get("/chats/:id/edit", async (req, res) => {
 //  -------------------------- 
 
  // update route  
-app.put("/chats/:id", async (req, res) => {
-  let { id } = req.params; 
-  let { msg: newMsg } = req.body; 
-  console.log(newMsg);
-  let updateChat = await Chat.findByIdAndUpdate(
-    id, 
-    { msg: newMsg }, 
-    { runValidators: true, new: true } 
-  );
-
-  console.log(updateChat); 
-  res.redirect("/chats"); 
-});
+app.put("/chats/:id", asyncWrap(async(req, res) => {
+    let { id } = req.params; 
+    let { msg: newMsg } = req.body; 
+    console.log(newMsg);
+    let updateChat = await Chat.findByIdAndUpdate(
+      id, 
+      { msg: newMsg }, 
+      { runValidators: true, new: true } 
+    );
+    console.log(updateChat); 
+    res.redirect("/chats"); 
+  }));
+  
 
 // Destroy route 
-app.delete("/chats/:id", async (req, res) => {
-  let { id } = req.params; 
+app.delete("/chats/:id", asyncWrap(async(req, res) => {
+let { id } = req.params; 
   let deleteChat = await Chat.findByIdAndDelete(id); 
   console.log(deleteChat); 
   res.redirect("/chats"); 
-}); 
-sg 
-xc khy kjh 
+}));
+  
+
 
 app.get("/", (req, res) => {
   res.send("root is working"); 
 }); 
+
+const handleValidationErr = (err) => {
+  console.log("This was a validation error. Please follow rules"); 
+  console.dir(err.msg); 
+  return err; 
+}
+
+
+//PRINT ERROR NAME
+app.use((err, req, res, next) => {
+  console.log(err.name);
+  if(err.name === "validationError") {
+    err = handleValidationErr(err); 
+   }
+  next(err);
+}); 
+
 
 
 // Error Handling Middleware

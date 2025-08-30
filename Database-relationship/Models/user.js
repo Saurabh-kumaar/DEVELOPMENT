@@ -19,8 +19,8 @@ const userSchema = new Schema({
       city: String,
     },
   ],
-}); 
-lidsjf 
+});
+
 
 const User = mongoose.model("User", userSchema); 
 
