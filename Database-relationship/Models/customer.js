@@ -79,7 +79,7 @@ const delCust = async () => {
   let data = await Customer.findByIdAndDelete("68b45296e904ea6d5c81d26c")
 };
  
-
+qr 
 delCust(); 
 // addCust(); 
 
