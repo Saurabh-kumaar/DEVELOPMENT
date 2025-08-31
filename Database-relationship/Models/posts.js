@@ -38,14 +38,5 @@ getData();
 
 
  
-reqr 
-adf 
-
-qr 
-
-
-
-
- 
 
 
