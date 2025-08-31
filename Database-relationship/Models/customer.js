@@ -83,4 +83,3 @@ const delCust = async () => {
 delCust(); 
 // addCust(); 
 
-hgy
